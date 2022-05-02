@@ -1,0 +1,6 @@
+.layout {
+  background: #E0DFE0;
+  height: 100vh;
+  width: min(100vw - 2rem, 600px);
+  margin-inline: auto;
+}

@@ -1,4 +1,4 @@
-.app-container {
+.page-container {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -9,31 +9,34 @@
   font-size: 36px;
   font-weight: 700;
   text-align: center;
-  width: min(100vw - 2rem, 400px);
+  width: min(100vw - 4rem, 500px);
   margin-inline: auto;
   margin-top: 1rem;
 }
 
-.page-description {
-  font-size: 36px;
+.question-container {
+  font-size: 24px;
   font-weight: 400;
   text-align: center;
-  width: min(100vw - 2rem, 400px);
+  width: min(100vw - 4rem, 500px);
   margin-inline: auto;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.page-question{
-  font-size: 36px;
-  font-weight: 400;
-  text-align: center;
-  width: min(100vw - 2rem, 400px);
-  margin-inline: auto;
+.question-box {
+  border: 1px solid black;
+  flex-grow: 1;
+  display: grid;
+  place-items: center;
 }
 
 .button-container {
   display: flex;
-  justify-content: center;
-  width: min(100vw - 2rem, 400px);
+  justify-content: space-between;
+  width: min(100vw - 4rem, 500px);
   margin-inline: auto;
   margin-bottom: 1rem;
 }

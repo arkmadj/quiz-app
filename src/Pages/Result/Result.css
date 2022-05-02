@@ -1,0 +1,35 @@
+.page-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.result-container {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  width: min(100vw - 4rem, 500px);
+  margin-inline: auto;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.result-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: min(100vw - 4rem, 500px);
+  margin-inline: auto;
+  max-height: 70vh;
+  overflow-y: scroll;
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: min(100vw - 4rem, 500px);
+  margin-inline: auto;
+  margin-bottom: 1rem;
+}
+
