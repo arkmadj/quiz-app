@@ -1,20 +1,24 @@
 import React from "react";
-import Button from "./Components/Button/Button";
-import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home/Home";
+import Quiz from "./Pages/Quiz/Quiz";
+import Result from "./Pages/Result/Result";
+import NoMatch from "./Pages/404/404";
 
-const App:React.FC = () => {
+const App: React.FC = () => {
 	return (
-		<div className="app-container">
-			<div className="page-title">Welcome to the trival Challenge</div>
-			<div className="page-description">
-				You will be presented with 10 True or False questions
-			</div>
-			<div className="page-question">Can you score 100%?</div>
-			<div className="button-container">
-				<Button label="BEGIN" />
-			</div>
+		<div>
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/quiz" element={<Quiz />} />
+				<Route path="/result" element={<Result />} />
+				<Route
+					path="*"
+					element={<NoMatch />}
+				/>
+			</Routes>
 		</div>
 	);
-}
+};
 
 export default App;

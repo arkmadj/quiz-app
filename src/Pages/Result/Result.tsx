@@ -1,23 +1,29 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Button from "../../Components/Button/Button";
 import ResultItem from "../../Components/ResultItem/ResultItem";
-import "./Result.css";
+import styles from "./Result.module.css";
 
 const Result: React.FC = () => {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/");
+  }
 	return (
-		<div className="page-container">
-			<div className="result-container">
-				<span className="result-title">You scored</span>
-				<span className="result-score">3 / 10</span>
+		<div className={styles.pageContainer}>
+			<div className={styles.resultContainer}>
+				<span>You scored</span>
+				<span>3 / 10</span>
 			</div>
-			<div className="result-list">
+			<div className={styles.resultList}>
 				{[...Array(10)].map((_, i) => (
-          <ResultItem correct={false} question="My name is Zultan"/>
+          <ResultItem correct={false} question="My name is Zultan" key={i}/>
 				))}
 			</div>
-			<div className="button-container">
-				<Button label="TRUE" />
-				<Button label="FALSE" />
+			<div className={styles.buttonContainer}>
+				<Button label="PLAY AGAIN?" onClick={handleClick}/>
 			</div>
 		</div>
 	);

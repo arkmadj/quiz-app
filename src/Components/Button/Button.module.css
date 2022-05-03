@@ -10,3 +10,13 @@
   background-color: #a19fa1;
   color: #000;
 }
+
+.link {
+  text-decoration: none;
+  color: #000;
+}
+
+.disabled {
+  cursor: not-allowed;
+  /* pointer-events: none; */
+}

@@ -1,11 +1,11 @@
-.page-container {
+.pageContainer {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.page-title {
+.pageTitle {
   font-size: 36px;
   font-weight: 700;
   text-align: center;
@@ -14,7 +14,7 @@
   margin-top: 1rem;
 }
 
-.question-container {
+.questionContainer {
   font-size: 24px;
   font-weight: 400;
   text-align: center;
@@ -26,14 +26,14 @@
   gap: 30px;
 }
 
-.question-box {
+.questionBox {
   border: 1px solid black;
   flex-grow: 1;
   display: grid;
   place-items: center;
 }
 
-.button-container {
+.buttonContainer {
   display: flex;
   justify-content: space-between;
   width: min(100vw - 4rem, 500px);

@@ -1,0 +1,40 @@
+.pageContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pageTitle {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  width: min(100vw - 2rem, 400px);
+  margin-inline: auto;
+  margin-top: 1rem;
+}
+
+.pageDescription {
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+  width: min(100vw - 2rem, 400px);
+  margin-inline: auto;
+}
+
+.pageGotcha{
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+  width: min(100vw - 2rem, 400px);
+  margin-inline: auto;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  width: min(100vw - 2rem, 400px);
+  margin-inline: auto;
+  margin-bottom: 1rem;
+}
+

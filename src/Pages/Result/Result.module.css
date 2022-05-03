@@ -1,11 +1,11 @@
-.page-container {
+.pageContainer {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.result-container {
+.resultContainer {
   font-size: 36px;
   font-weight: 700;
   text-align: center;
@@ -16,7 +16,7 @@
   flex-direction: column;
 }
 
-.result-list {
+.resultList {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -25,9 +25,9 @@
   max-height: 70vh;
   overflow-y: scroll;
 }
-.button-container {
+.buttonContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: min(100vw - 4rem, 500px);
   margin-inline: auto;
   margin-bottom: 1rem;
