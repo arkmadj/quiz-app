@@ -35,7 +35,7 @@ const Result: React.FC = () => {
 			) : (
 				<div className={styles.resultList}>
 					{questions.map((question, index) => (
-						<ResultItem correct={false} question={question} key={index} />
+						<ResultItem question={question} key={index} />
 					))}
 				</div>
 			)}

@@ -1,36 +1,22 @@
 .itemContainer {
-  /* background: red; */
   display: flex;
-  align-items: flex-start;
-  gap: 25px;
+  gap: 50px;
 }
 
 .itemIcon {
   font-size: 50px;
   color: #828282;
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.iconContainer {
+  position: absolute;
+  top: -20px;
 }
 
 .itemQuestion {
   font-size: 24px;
-  /* background-color: antiquewhite; */
   color: #828282;
-  display: grid;
-  place-items: center;
-  flex-grow: 1;
-}
-
-.answerSection {
-  font-size: 18px;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  color: #000;
-}
-
-.answerContainer {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
 }
