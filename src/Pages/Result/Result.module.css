@@ -25,6 +25,13 @@
   max-height: 70vh;
   overflow-y: scroll;
 }
+
+.noResult {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+
 .buttonContainer {
   display: flex;
   justify-content: center;
